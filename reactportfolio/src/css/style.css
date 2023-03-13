@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+* {
+  box-sizing: border-box;
+}
+
+:root{
+  --bg-color: #333;
+  --green-color: #9ecacc;
+  --color: #485874;
+  --text-color: #999;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: var(--bg-color);
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 3rem !important;
+}
+
+h2 {
+  font-size: 2rem !important;
+}
+
+h3 {
+  font-size: 1.5rem !important;
+}
+
+.navbar-brand {
+  background: var(--green-color) !important;
+  color: var(--bg-color) !important;
+  padding: 5px !important;
+  font-size: 36px !important;
+  font-weight: 600;
+}
+
+.navbar {
+  padding: .8rem; 
+  background: var(--bg-color) !important;
+}
+
+.navbar-nav li {
+  padding-right: 20px;
+}
+
+.nav-link {
+  font-size: 1.2em !important;
+  color: var(--green-color) !important;
+  font-weight: 500;
+}
+
+.navbar-toggler {
+  color: var(--green-color) !important;
+  border-color: var(--green-color) !important;
+  background-color: var(--green-color) !important;
+}
+
+.carousel-inner {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-caption h1 {
+  font-size: 500%;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 10px #000;
+}
+
+.carousel-caption h3 {
+  font-size: 200%;
+  font-weight: 500;
+  text-shadow: 1px 1px 10px #000;
+  padding-bottom: 1rem;
+}
+
+.text-shadow {
+  text-shadow: 1px 1px #cbeced !important;
+}
+
+.btn-lg {
+  font-size: 16px !important;
+  width: 100px !important;
+}
+
+.lead {
+  background: var(--green-color);
+  color: var(--bg-color);
+}
+
+.section-bg {
+  background: #eee;
+}
+
+.title {
+  color: var(--color) !important;
+  font-weight: bold;
+}
+
+.title-color {
+  color: var(--color) !important;
+  font-weight: bold !important;
+}
+
+.about-img {
+  border-radius: 50%;
+  width: 150px;
+}
+
+.about-text {
+  color: var(--text-color);
+}
+
+.card-text {
+  color: var(--text-color);
+}
+
+.white-text {
+  color: #fff;
+}
+
+.jumbotron {
+  padding: 1rem;
+  border-radius: 0;
+}
+
+.padding {
+  padding-bottom: 2rem;
+}
+
+.welcome {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.welcome hr {
+  border-top: 1px solid #b4b4b4;
+  width: 95%;
+  margin-top: .3rem;
+  margin-bottom: 1rem;
+}
+
+.fa-code {
+  color: #e54d26;
+}
+
+.fa-bold {
+  color: #563d7c;
+}
+
+.fa-css3 {
+  color: #2163af;
+}
+
+.fa-code, .fa-bold, .fa-css3 {
+  font-size: 4em;
+  margin: 1rem;
+}
+
+#portfolioGrid {
+  display: grid;
+  grid-template-rows: 400px 300px 300px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "furniture-store furniture-store"
+  "semantic-html travel-california"
+  "css-snippet portfolio-css";
+}
+
+.portfolioGridArea {
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
+  border: 10px solid var(--green-color);
+}
+
+#furniture-store {
+  grid-area: furniture-store;
+  background: -webkit-linear-gradient(rgba(51, 51, 51, 0.8), rgba(51, 51, 51, 0.8)), url("../img/furniture-store.png");
+  background: linear-gradient(rgba(51, 51, 51, 0.8), rgba(51, 51, 51, 0.8)), url("../img/furniture-store.png");
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: ease-in-out 500ms;
+}
+
+#furniture-store:hover {
+  grid-area: furniture-store;
+  background: -webkit-linear-gradient(rgba(51, 51, 51, 0.4), rgba(51, 51, 51, 0.4)), url("../img/furniture-store.png");
+  background: linear-gradient(rgba(51, 51, 51, 0.4), rgba(51, 51, 51, 0.4)), url("../img/furniture-store.png");
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#semantic-html {
+  grid-area: semantic-html;
+  background: -webkit-linear-gradient(rgba(51, 51, 51, 0.8), rgba(51, 51, 51, 0.8)), url("../img/semantic-html.png");
+  background: linear-gradient(rgba(51, 51, 51, 0.8), rgba(51, 51, 51, 0.8)), url("../img/semantic-html.png");
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: ease-in-out 500ms;
+}
+
+#semantic-html:hover {
+  grid-area: semantic-html;
+  background: -webkit-linear-gradient(rgba(51, 51, 51, 0.8), rgba(51, 51, 51, 0.2)), url("../img/semantic-html.png");
+  background: linear-gradient(rgba(51, 51, 51, 0.8), rgba(51, 51, 51, 0.2)), url("../img/semantic-html.png");
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#travel-california {
+  grid-area: travel-california;
+  background: -webkit-linear-gradient(rgba(51, 51, 51, 0.8), rgba(51, 51, 51, 0.8)), url("../img/travel-california.png");
+  background: linear-gradient(rgba(51, 51, 51, 0.8), rgba(51, 51, 51, 0.8)), url("../img/travel-california.png");
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: ease-in-out 500ms;
+}
+#travel-california:hover {
+  grid-area: travel-california;
+  background: -webkit-linear-gradient(rgba(51, 51, 51, 0.8), rgba(51, 51, 51, 0.2)), url("../img/travel-california.png");
+  background: linear-gradient(rgba(51, 51, 51, 0.8), rgba(51, 51, 51, 0.2)), url("../img/travel-california.png");
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#css-snippet {
+  grid-area: css-snippet;
+  background: -webkit-linear-gradient(rgba(51, 51, 51, 0.8), rgba(51, 51, 51, 0.8)), url("../img/css-snippet.png");
+  background: linear-gradient(rgba(51, 51, 51, 0.8), rgba(51, 51, 51, 0.8)), url("../img/css-snippet.png");
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: ease-in-out 500ms;
+}
+
+#css-snippet:hover {
+  grid-area: css-snippet;
+  background: -webkit-linear-gradient(rgba(51, 51, 51, 0.8), rgba(51, 51, 51, 0.2)), url("../img/css-snippet.png");
+  background: linear-gradient(rgba(51, 51, 51, 0.8), rgba(51, 51, 51, 0.2)), url("../img/css-snippet.png");
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat; 
+}
+
+#portfolio-css {
+  grid-area: portfolio-css;
+  background: -webkit-linear-gradient(rgba(51, 51, 51, 0.8), rgba(51, 51, 51, 0.8)), url("../img/portfolio.jpg");
+  background: linear-gradient(rgba(51, 51, 51, 0.8), rgba(51, 51, 51, 0.8)), url("../img/portfolio.jpg");
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: ease-in-out 500ms;
+}
+
+#portfolio-css:hover {
+  grid-area: portfolio-css;
+  background: -webkit-linear-gradient(rgba(51, 51, 51, 0.8), rgba(51, 51, 51, 0.2)), url("../img/portfolio.jpg");
+  background: linear-gradient(rgba(51, 51, 51, 0.8), rgba(51, 51, 51, 0.2)), url("../img/portfolio.jpg");
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;  
+}
+
+.headingMain {
+  background-color: var(--green-color);
+  padding: 16px;
+  height: 100px;
+  width: 240px;
+  margin-top: -150px;
+  color: var(--bg-color);
+}
+
+.heading {
+  background-color: var(--green-color);
+  padding: 16px;
+  height: 100px;
+  width: 240px;
+  margin-top: -180px;
+  color: #32343d;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.subTitle {
+  font-size: 16px;
+}
+
+.page-section a:hover {
+  text-decoration: none;
+}
+
+footer {
+  color: #bbb;
+}
+
+footer .fa {
+  color: #555;
+  margin-right: 10px;
+  font-size: 32px;
+}
+
+footer .fa:hover {
+  color: var(--text-color);
+  margin-right: 10px;
+}
+
+footer a {
+  color: #555 !important;
+  text-decoration: none !important;
+}
+footer a:hover {
+  color: var(--text-color) !important;
+}
+
+footer hr {
+  color: #bbb;
+  background: #555;
+}
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+  .navbar-brand {
+    font-size: 24px !important;
+  }
+  .lead {
+    text-align: center !important;
+  }
+  .carousel-item {
+    background-position: center top !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    width: 100% !important;
+    height: 300px !important;
+  }
+  h1 {
+    font-size: 2rem !important;
+  }
+
+  h2 {
+    font-size: 1.5rem !important;
+  }
+  
+  h3 {
+    font-size: 1rem !important;
+  }
+  #portfolioGrid {
+    display: grid;
+    grid-template-rows:  300px 300px 300px 300px 300px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "furniture-store"
+    "semantic-html"
+    "travel-california"
+    "css-snippet"
+    "portfolio-css";
+  }
+  .carousel-caption {
+    position: absolute;
+    top: 30%;
+    transform: translateY(-30%);
+  }
+  
+  .carousel-caption h1 {
+    font-size: 180% !important;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 10px #000;
+  }
+  
+  .carousel-caption h3 {
+    font-size: 100% !important;
+    font-weight: 500;
+    text-shadow: 1px 1px 10px #000;
+    padding-bottom: 1rem;
+  }
+}
+@media (max-width: 768px) {
+
+
+}
+@media (max-width: 576px) {
+
+
+}
+
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+  background-position: bottom center;
+  height: 600px;
+}
+.carousel-item:after {
+  content:"";
+  display:block;
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background: var(--bg-color);
+  opacity: 0.8;
+}
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#fixed {
+  background-image: url('../img/portfolio-banner1.jpg');
+  opacity: 0.3;
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+
+
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+
+
+
+
+
+
+
+
