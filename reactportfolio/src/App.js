@@ -1,36 +1,30 @@
 //import logo from './logo.svg';
 import './css/style.css';
-import Header from "./components/Header";
-import Home from "./components/Home";
+import React, { Component } from 'react';
+import Header from './components/Header';
 import JumboTron from "./components/JumboTron";
-import About from "./components/About";
+import About from './components/About';
 import Skills from "./components/Skills";
 import Services from "./components/Services";
-import Work from "./components/Work";
-import Portfolio from "./components/Portfolio";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-
-
-function App() {
-  return (
-    <>
-    <Header />
-    <JumboTron />
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/skills" element={<Services />} />
-          <Route path="/work" element={<Work />} />
-        </Route>
-      </Routes>
-      <Footer />
-    </>
-  )
+import Portfolio from './components/Portfolio';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import resumeData from './resumeData';
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <Header resumeData={resumeData}/>
+        <JumboTron resumeData={resumeData}/>
+        <About resumeData={resumeData}/>
+        <Skills resumeData={resumeData}/>
+        <Services resumeData={resumeData}/>
+        <Portfolio resumeData={resumeData}/>
+        <Contact resumeData={resumeData}/>
+        <Footer resumeData={resumeData}/>
+      </div>
+    );
+  }
 }
 
 export default App;
