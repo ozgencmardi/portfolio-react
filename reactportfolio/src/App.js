@@ -11,13 +11,16 @@ import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
+
 function App() {
   return (
     <>
+    <Header />
+    <JumboTron />
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="about" element={<About />} />
+          <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/skills" element={<Skills />} />
@@ -25,6 +28,7 @@ function App() {
           <Route path="/work" element={<Work />} />
         </Route>
       </Routes>
+      <Footer />
     </>
   )
 }
