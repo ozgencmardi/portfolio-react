@@ -14,23 +14,6 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <>
-      <Header />
-      <Home />
-      <JumboTron />
-      <About />
-      <Skills />
-      <Services />
-      <Work />
-      <Portfolio />
-      <Contact />
-      <Footer />
-    </>
-  );
-}
-
-function App() {
-  return (
-    <>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
