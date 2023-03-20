@@ -3,7 +3,6 @@ import React from 'react';
 const Home = () => {
   return (
     <div id="home">
-      {/* Image Slider */}
       <div id="slides" className="carousel slide" data-ride="carousel">
         <ul className="carousel-indicators">
           <li data-target="#slides" data-slide-to="0" className="active"></li>
