@@ -2,7 +2,7 @@
 
 ## Description
 
-This is a Portfolio Webpage which is created by React.js. This project is about website optimization and accessibility, for the users to easily navigate within the website by clicking some highlighted navigation bars. It contains Semantic HTML, Bootstap CSS, React.js and Assets.
+This is a Portfolio Webpage which is created with React.js. This project is about website optimization and accessibility, for the users to easily navigate within the website by clicking some highlighted navigation bars. It contains Semantic HTML, Bootstap CSS, React.js and Assets.
 
 ## Installation
 
