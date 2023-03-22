@@ -24,11 +24,10 @@ function Header() {
       <AppBar position="static" style={{ backgroundColor: '#222' }}>
         <Toolbar>
         <Typography variant="h6" href="#home" className={classes.title}>
-          <a href="#home"  style={{ color: '#fff', textDecoration: 'none' }}>M. Ozgenc Mardi</a>
+          <a href="#home" style={{ color: '#fff', textDecoration: 'none' }}>M. Ozgenc Mardi</a>
         </Typography>
           <Button color="inherit" href="#home">Home</Button>
           <Button color="inherit" href="#about">About</Button>
-          <Button color="inherit" href="#skills">Skills</Button>
           <Button color="inherit" href="#services">Services</Button>
           <Button color="inherit" href="#portfolio">Portfolio</Button>
           <Button color="inherit" href="#contact">Contact</Button>
