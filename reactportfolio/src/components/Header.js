@@ -1,22 +1,42 @@
-import React from 'react';
-import { Navbar, Nav } from 'react-bootstrap';
+import React, { useState } from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import {
+  AppBar,
+  Toolbar,
+  Typography,
+  Button
+} from '@material-ui/core';
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    flexGrow: 1,
+  },
+  title: {
+    flexGrow: 1,
+  },
+}));
 
 function Header() {
+  const classes = useStyles();
+
   return (
-    <Navbar bg="light" expand="lg">
-      <Navbar.Brand href="home">M. Ozgenc Mardi</Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="mr-auto">
-          <Nav.Link href="#home">Home</Nav.Link>
-          <Nav.Link href="#services">Services</Nav.Link>
-          <Nav.Link href="#work">Work</Nav.Link>
-          <Nav.Link href="#portfolio">Portfolio</Nav.Link>
-          <Nav.Link href="#contact">Contact</Nav.Link>
-        </Nav>
-      </Navbar.Collapse>
-    </Navbar>
+    <div className={classes.root}>
+      <AppBar position="static" style={{ backgroundColor: '#222' }}>
+        <Toolbar>
+        <Typography variant="h6" href="#home" className={classes.title}>
+          <a href="#home"  style={{ color: '#fff', textDecoration: 'none' }}>M. Ozgenc Mardi</a>
+        </Typography>
+          <Button color="inherit" href="#home">Home</Button>
+          <Button color="inherit" href="#about">About</Button>
+          <Button color="inherit" href="#skills">Skills</Button>
+          <Button color="inherit" href="#services">Services</Button>
+          <Button color="inherit" href="#portfolio">Portfolio</Button>
+          <Button color="inherit" href="#contact">Contact</Button>
+        </Toolbar>
+      </AppBar>
+    </div>
   );
 }
 
 export default Header;
+
