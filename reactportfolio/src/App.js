@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Header from './components/Header';
 import JumboTron from "./components/JumboTron";
 import About from './components/About';
-import Skills from "./components/Skills";
 import Services from "./components/Services";
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
@@ -14,7 +13,6 @@ function App () {
             <Header />
             <JumboTron />
             <About />
-            <Skills />
             <Services />
             <Portfolio />
             <Contact />
