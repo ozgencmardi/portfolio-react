@@ -48,7 +48,7 @@ function Contact() {
   return (
     <div className={classes.contactContainer} id="contact">
       <Typography component="h3" variant="h3" align="center" gutterBottom>
-        Contact Us
+        Contact
       </Typography>
       <Grid container spacing={4}>
         <Grid item xs={12} md={6}>

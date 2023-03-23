@@ -26,6 +26,22 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
     height: '100%',
   },
+  socialLinks: {
+    display: 'flex',
+    justifyContent: 'center',
+    color: '#fff',
+    padding: theme.spacing(2, 0, 4),
+  },
+  socialLink: {
+    marginLeft: theme.spacing(2),
+    marginRight: theme.spacing(2),
+    '&:first-child': {
+      marginLeft: 0,
+    },
+    '&:last-child': {
+      marginRight: 0,
+    },
+  },
 }));
 
 function Jumbotron() {
@@ -40,6 +56,18 @@ function Jumbotron() {
         <Typography variant="h4" align="center" style={{ color: '#fff' }} paragraph>
           HTML5, CSS3, JavaScript
         </Typography>
+        <div className={classes.socialLinks}>
+          <a href="https://github.com/ozgencmardi" style={{ color: '#fff', textDecoration: 'none', marginRight: '10px' }}  target="_blank">
+            <Typography variant="body2" align="center" className={classes.socialLink}>
+              Github
+            </Typography>
+          </a>
+          <a href="https://www.linkedin.com/in/ozgencmardi/" style={{ color: '#fff', textDecoration: 'none', marginLeft: '10px' }} target="_blank">
+            <Typography variant="body2" align="center" className={classes.socialLink}>
+              Linkedin
+            </Typography>
+          </a>
+          </div>
         <div className={classes.jumbotronButton}>
           <Button variant="contained" color="primary" href="#portfolio" style={{ backgroundColor: '#fff', color: '#222' }}>
             Message Me
