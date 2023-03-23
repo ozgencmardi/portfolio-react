@@ -100,6 +100,7 @@ function Contact() {
                   color="primary"
                   size="large"
                   className={classes.submitButton}
+                  style={{ backgroundColor: '#222', color: '#fff' }}
                 >
                   Send
                 </Button>
