@@ -8,6 +8,7 @@ This is a Portfolio Webpage which is created with React.js. This project is abou
 
 1. Clone/Download the repo.
 2. Navigate to the project directory and run `npm install` to install the necessary dependencies.
+3. Navigate to the project directory and run `npm install @material-ui/core` to install the Material UI.
 
 ## Usage
 
