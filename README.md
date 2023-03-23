@@ -15,7 +15,7 @@ Run `npm start` to spin the up the local dev server port 3000.(http://localhost:
 
 You can see the image of the project below.
 
-![alt text](img/screenshot.png)
+![alt text](reactportfolio/src/img/screenshot.png)
 
 ## Links
 
