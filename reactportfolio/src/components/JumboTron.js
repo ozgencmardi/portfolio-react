@@ -69,7 +69,7 @@ function Jumbotron() {
           </a>
           </div>
         <div className={classes.jumbotronButton}>
-          <Button variant="contained" color="primary" href="#portfolio" style={{ backgroundColor: '#fff', color: '#222' }}>
+          <Button variant="contained" color="primary" href="#contact" style={{ backgroundColor: '#fff', color: '#222' }}>
             Message Me
           </Button>
         </div>
