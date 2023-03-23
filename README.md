@@ -13,6 +13,10 @@ This is a Portfolio Webpage which is created with React.js. This project is abou
 
 Run `npm start` to spin the up the local dev server port 3000.(http://localhost:3000).
 
+You can see the image of the project below.
+
+![alt text](img/screenshot.png)
+
 ## Links
 
 <b>Source Code</b>
